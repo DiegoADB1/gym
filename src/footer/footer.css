@@ -1,0 +1,42 @@
+.footer {
+  background-color: black;
+  max-width: 100%;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+}
+
+.content {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.content:hover {
+  color: #ec6405;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #ec6405;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+}
