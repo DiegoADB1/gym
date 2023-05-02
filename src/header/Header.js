@@ -1,8 +1,9 @@
-import "./header.css"
+import "./header.css";
 import LOGO from "../imgs/logo.png";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,37 +14,53 @@ function Header() {
       <div className="container-fluid justify-content-center">
         <ul className="navbar-nav w-50 text-center">
           <li className="col-lg-2 nav-item">
-            <a className="fw-bolder button" href="#">
+            <Link className="fw-bolder button" to="/">
               HOME
-            </a>
+            </Link>
           </li>
           <li className="col-lg-2 nav-item">
-            <a className="fw-bolder button" href="#">
-              ABOUT US
-            </a>
+            <Link className="fw-bolder button" to="/sobre">
+              SOBRE NOS
+            </Link>
           </li>
           <li className="col-lg-2 nav-item">
-            <a className="fw-bolder button" href="#">
-              SERVICES
-            </a>
+          <Link className="fw-bolder button" to="/servico">
+              SERVICOS
+            </Link>
           </li>
           <li className="col-lg-2 nav-item">
-            <a className="fw-bolder button" href="#">
-              OUR TEAM
-            </a>
+            <Link className="fw-bolder button" to="/time">
+              NOSSO TIME
+            </Link>
           </li>
-          <li className="col-lg-2 nav-item" >
-            <a className="fw-bolder button" href="#">
-              CONTACT
-            </a>
+          <li className="col-lg-2 nav-item">
+            <Link className="fw-bolder button" to="/contato">
+              CONTATO
+            </Link>
           </li>
         </ul>
       </div>
-      <div className="row" style={{marginRight: 20}}>
-        <div className="col-lg-3"><a href="#" style={{color: "white"}}><FaFacebookF /></a></div>
-        <div className="col-lg-3"><a href="#" style={{color: "white"}}><FaTwitter /></a></div>
-        <div className="col-lg-3"><a href="#" style={{color: "white"}}><BsYoutube /></a></div>
-        <div className="col-lg-3"><a href="#" style={{color: "white"}}><FiInstagram /></a></div>
+      <div className="row" style={{ marginRight: 20 }}>
+        <div className="col-lg-3">
+          <a href="#!" style={{ color: "white" }}>
+            <FaFacebookF />
+          </a>
+        </div>
+        <div className="col-lg-3">
+          <a href="#!" style={{ color: "white" }}>
+            <FaTwitter />
+          </a>
+        </div>
+        <div className="col-lg-3">
+          <a href="#!" style={{ color: "white" }}>
+            <BsYoutube />
+          </a>
+        </div>
+        <div className="col-lg-3">
+          <a href="#!" style={{ color: "white" }}>
+            <FiInstagram />
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -8,17 +8,18 @@ import { MdEmail } from "react-icons/md";
 function Footer() {
   return (
     <footer className="pt-5 pb-5">
-      <div className="" style={{ marginLeft: 280 }}>
+      <div style={{ marginLeft: 280 }}>
         <div className="row">
           <div className="col-md-3" style={{ marginRight: 90 }}>
             <h5 className="text-uppercase center">
               <img className="w-50 mt-2" src={LOGO} alt="Logo" />
             </h5>
-            <div className="">
+            <div>
               <p className="text-white content text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore dolore magna aliqua endisse
-                ultrices gravida lorem.
+                Não importa se você é um iniciante ou um atleta experiente,
+                nosso site de academia tem tudo o que você precisa para levar
+                sua saúde e fitness para o próximo nível. Inscreva-se hoje e
+                comece sua jornada para uma vida mais saudável e ativa!
               </p>
             </div>
             <div className="container center mt-4">

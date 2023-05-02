@@ -1,0 +1,37 @@
+.up-box-description {
+  padding-top: 15px;
+  width: 360px;
+  height: 90px;
+  background-color: black;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-box-description {
+  padding-top: 30px;
+  width: 555px;
+  height: 120px;
+  background-color: black;
+}
+
+.classes {
+  color: #ec6405;
+}
+
+.description-class {
+  color: white;
+}
+
+.image {
+  width: 360px;
+  height: 240px;
+}
+
+.bottom-image {
+  width: 555px;
+  height: 370px;
+}

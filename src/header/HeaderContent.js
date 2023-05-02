@@ -1,6 +1,6 @@
 function HeaderContent(props) {
   return (
-  <div style={{color: "white", marginRight: 100,}}>
+  <div style={{color: "white"}}>
     <h1 className="text-uppercase fw-bolder" style={{fontSize: 50,}}>
       {props.name}
     </h1>
