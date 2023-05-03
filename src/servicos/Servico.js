@@ -6,7 +6,7 @@ import PricingSection from "./precos.js";
 
 function Servico() {
   return (
-    <div className="container mw-100" style={{backgroundColor: "#212529"}}>
+    <div className="container mw-100" style={{backgroundColor: "#101112"}}>
       <div className="row">
         <div className="col-xl-12 pt-5 pb-5 header-image">
           <Header />
