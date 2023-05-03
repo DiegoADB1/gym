@@ -3,7 +3,7 @@ import './precos.css';
 
 function PricingSection() {
   return (
-    <section className="pricing-section service-pricing spad" style={{backgroundColor:'#212529'}}>
+    <section className="pricing-section service-pricing spad" style={{backgroundColor:'#101112'}}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
