@@ -15,7 +15,7 @@ function Servico() {
             style={{ height: 350, fontFamily: ["Oswald", "sans-serif"] }}
           >
             <div></div>
-            <HeaderContent name={"servicos"} />
+            <HeaderContent name={"serviços"} />
           </div>
         </div>
       </div>

@@ -15,17 +15,17 @@ function Header() {
         <ul className="navbar-nav w-50 text-center">
           <li className="col-lg-2 nav-item">
             <Link className="fw-bolder button" to="/">
-              HOME
+              INÍCIO
             </Link>
           </li>
           <li className="col-lg-2 nav-item">
             <Link className="fw-bolder button" to="/sobre">
-              SOBRE NOS
+              SOBRE NÓS
             </Link>
           </li>
           <li className="col-lg-2 nav-item">
           <Link className="fw-bolder button" to="/servico">
-              SERVICOS
+              SERVIÇOS
             </Link>
           </li>
           <li className="col-lg-2 nav-item">
