@@ -6,10 +6,7 @@ import { FaTwitter, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 function NossoTimeComp() {
   return (
-    <section style={{ backgroundColor: "rgb(56, 56, 56)", height: "700px"}}>
-      <div class="row">
-        <h1 className="titleT">Nosso Time</h1>
-      </div>
+    <section style={{ backgroundColor: "#101112", height: "700px", paddingTop: "100px", paddingBottom: "100px"}}>
       <div class="row">
         <div class="column">
           <div class="card">
