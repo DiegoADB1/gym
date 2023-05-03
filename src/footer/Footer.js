@@ -59,33 +59,33 @@ function Footer() {
           </div>
 
           <div className="col-md-3 mt-4">
-            <h5 className="title">Useful links</h5>
+            <h5 className="title">Links úteis</h5>
             <ul className="list-unstyled">
               <li>
                 <a href="#!" className="content">
-                  About
+                  Sobre nós
                 </a>
               </li>
               <li>
                 <a href="#!" className="content">
-                  Blog
+                  Serviços
                 </a>
               </li>
               <li>
                 <a href="#!" className="content">
-                  Classes
+                  Nosso time
                 </a>
               </li>
               <li>
                 <a href="#!" className="content">
-                  Contact
+                  Contato
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="col-md-4 mt-4">
-            <h5 className="title">Support</h5>
+            <h5 className="title">Suporte</h5>
             <ul className="list-unstyled">
               <li>
                 <a href="#!" className="content">
@@ -94,17 +94,12 @@ function Footer() {
               </li>
               <li>
                 <a href="#!" className="content">
-                  My account
+                  Minha conta
                 </a>
               </li>
               <li>
                 <a href="#!" className="content">
-                  Subscribe
-                </a>
-              </li>
-              <li>
-                <a href="#!" className="content">
-                  Contact
+                  Inscreva-se
                 </a>
               </li>
             </ul>
