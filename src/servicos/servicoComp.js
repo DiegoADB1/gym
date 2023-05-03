@@ -11,7 +11,7 @@ const ServicesSection = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-title">
-                <span style={{color:'#f36100'}}>O que fazemos?</span>
+                <span className="fw-bolder" style={{color:'#f36100'}}>O que fazemos?</span>
                 <h2 style={{color:'white'}}>ELEVAMOS SEU POTENCIAL</h2>
               </div>
             </div>
