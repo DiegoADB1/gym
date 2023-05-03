@@ -6,7 +6,7 @@ function SobreNosComp() {
   return (
     <div className="row mw-100">
       <div className="colorgeral">
-        <div style={{marginTop: "20px"}}>
+        <div className="row pd" style={{height: 400, backgroundColor: "#080808", fontFamily: ["Oswald", "sans-serif"] }}>
           <ChooseUs/>
         </div>
         <div class="divisao">
