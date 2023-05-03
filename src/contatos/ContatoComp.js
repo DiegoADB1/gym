@@ -14,7 +14,6 @@ function ContatoComp() {
 
   return (
     <div className="container form-container backgroundColor class-row">
-      <h2>Contato</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Nome:
