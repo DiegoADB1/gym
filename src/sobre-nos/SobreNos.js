@@ -13,7 +13,7 @@ function SobreNos() {
             className="d-flex align-items-center justify-content-center"
             style={{ height: 350, fontFamily: ["Oswald", "sans-serif"] }}
           >
-            <HeaderContent name={"Sobre Nós"} />
+            <HeaderContent name={"Nossa Academia"} />
           </div>
         </div>
       </div>

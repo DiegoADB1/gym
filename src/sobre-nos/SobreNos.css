@@ -1,26 +1,103 @@
-.divisao {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
   width: 100%;
 }
 
-.imgs {
-  float: left;
-  width: 50%;
-  margin-right: 20px;
+.carousel-item.active {
+  display: block;
 }
 
-.text2 {
-  text-align:center;
-  font-size: 18px;
-  line-height: 1.5;
-  margin: auto;
-  width: 50%;
-  color: aliceblue;
+.carousel-item img {
+  width: 100%;
 }
 
-.colorgeral {
-  background-color: #0a0a0a;
+.carousel-item .carousel-image {
+  width: 80%; /* Defina o tamanho desejado para as imagens */
+  max-width: 500px; /* Define o tamanho máximo das imagens */
+  margin: 0px auto; /* Centraliza as imagens horizontalmente */
+  position: relative;
+  align-items: center;
+  align-items: center;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+}
+
+  
+
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.carousel-indicators button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 50%;
+  background-color: #888;
+}
+
+.carousel-indicators button.active {
+  background-color: #333;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-control-prev {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev::before {
+  content: "";
+}
+
+.carousel-control-next::before {
+  content: "";
 }

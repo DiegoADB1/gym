@@ -1,29 +1,73 @@
+
+import React from "react";
 import imagem from "../imgs/sobre-nos.jpg";
+import esteira from "../imgs/esteira.jpg"
+import peso from "../imgs/peso.jpg"
 import ChooseUs from "../home/cards/chooseus/ChooseUs";
 import "./SobreNos.css";
+import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 function SobreNosComp() {
   return (
-    <div className="row mw-100">
-      <div className="colorgeral">
-        <div className="row pd" style={{height: 400, backgroundColor: "#080808", fontFamily: ["Oswald", "sans-serif"] }}>
-          <ChooseUs/>
+    <div id="carouselExampleIndicators" className="carousel slide">
+      <div className="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          className="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+        <img src={imagem} className="carousel-image" />
         </div>
-        <div class="divisao">
-          <img className="imgs" src={imagem} alt="img" />
-          <p className="text2">
-            "Após anos de estudos e experiência em outras academias. A ideia era
-            oferecer um espaço moderno e agradável para as pessoas se
-            exercitarem e cuidarem da saúde. Após meses de trabalho duro, a
-            academia foi inaugurada e se transformou em um centro de saúde e
-            bem-estar, com uma equipe qualificada e variedade de atividades
-            físicas. O compromisso com a qualidade e a dedicação em ajudar os
-            clientes a alcançarem seus objetivos de forma saudável e sustentável
-            são os diferenciais da academia."
-          </p>
+        <div className="carousel-item">
+        <img src={esteira} className="carousel-image" />
+          
+        </div>
+        <div className="carousel-item">
+        <img src={peso} className="carousel-image" />
+          
         </div>
       </div>
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
   );
 }
+
 export default SobreNosComp;

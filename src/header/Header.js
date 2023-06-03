@@ -20,7 +20,7 @@ function Header() {
           </li>
           <li className="col-lg-2 nav-item">
             <Link className="fw-bolder button" to="/sobre">
-              SOBRE NÓS
+              NOSSA ACADEMIA
             </Link>
           </li>
           <li className="col-lg-2 nav-item">
