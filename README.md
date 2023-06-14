@@ -1,8 +1,8 @@
 # PARTICIPANTES
 
-Diego Aragão Dutra Borges
-André de Oliveira Lucena Junior
-Victor Hugo Queiroz Couto
-Victor Vianelo Campos
-Rodrigo Tymoti Martins
-Matheus Finccato Cecchini
+Diego Aragão Dutra Borges\n
+André de Oliveira Lucena Junior\n
+Victor Hugo Queiroz Couto\n
+Victor Vianelo Campos\n
+Rodrigo Tymoti Martins\n
+Matheus Finccato Cecchini\n
