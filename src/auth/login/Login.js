@@ -1,15 +1,22 @@
-
-import { useContext, useState } from "react";
-import AuthContext from "./AuthContext";
+import { useState } from "react";
+import config from "../../config.json";
+import axios from "axios";
+import jwt from 'jsonwebtoken';
 
 function Login() {
-    const context = useContext(AuthContext);
 
     const handleSubmit = async e => {
-
         e.preventDefault()
-        await context.Login(formInputData);
-        console.log(context)
+
+        const response = await axios.post(config.api.url + "/api/auth/login", formInputData)
+        if (response.status != 200) {
+            return;
+        }
+        
+        localStorage.setItem("Authorization", response.data)
+        let jsonDecoded = jwt.decode(response.data)
+        localStorage.setItem("username", jsonDecoded.sub)
+        
     }
 
     const [formInputData, setFormInputData] = useState({

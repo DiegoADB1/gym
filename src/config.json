@@ -1,5 +1,5 @@
 {
     "api": {
-        "url": "http://localhost:8080"
+        "url": "https://gym-api-production-ed0e.up.railway.app/"
     }
 }

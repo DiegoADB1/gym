@@ -7,9 +7,18 @@ import Servico from "./servicos/Servico";
 import Treino from "./treino/Treino";
 import Login from "./auth/login/Login";
 
+import { userContext } from './context/UserContext';
+import { useState } from "react";
 
 function App() {
+  const getUser = () => {
+    let username = localStorage.getItem("username")
+
+    return { username };
+  }
+
   return (
+    <userContext.Provider value={getUser()}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,6 +30,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
+    </userContext.Provider>
   );
 }
 

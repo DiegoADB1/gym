@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import LOGO from "../imgs/logo.png";
 import "./header.css";
-import { useContext } from "react";
-import AuthContext from "../auth/login/AuthContext";
 
+import UserLogin from "./login/UserLogin";
 
 function Header() {
-  const { user } = useContext(AuthContext);
 
   return (
     <nav className="navbar navbar-expand-lg">
@@ -49,8 +47,8 @@ function Header() {
           </ul>
         </div>
       </div>
-      <div className="row" style={{ marginRight: 20 }}>
-        {console.log(user)}
+      <div className="row col-lg-2 nav-item" style={{ marginRight: 20, textAlign: "center" }}>
+        <UserLogin/>
       </div>
     </nav>
   );
