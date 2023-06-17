@@ -8,9 +8,13 @@ function UserLogin() {
 
     const verifyUser = () => {
         if (user.username == undefined) {
-            console.log("undefined")
-            return <Login/>
-        } 
+            const localUser = localStorage.getItem("username")
+            if (localUser == undefined) {
+                return <Login />
+            }
+
+            setUser({ username: localUser })
+        }
 
         return <div className="welcome">Bem-vindo, <span className="username">{user.username}</span></div>
     }
@@ -22,7 +26,7 @@ function UserLogin() {
                     setUser(value)
                 }}
             </userContext.Consumer>
-                <div>{verifyUser()}</div>
+            <div>{verifyUser()}</div>
         </>
     )
 }
