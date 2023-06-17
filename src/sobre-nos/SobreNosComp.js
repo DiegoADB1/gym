@@ -1,12 +1,11 @@
 
-import React from "react";
-import imagem from "../imgs/sobre-nos.jpg";
-import esteira from "../imgs/esteira.jpg"
-import peso from "../imgs/peso.jpg"
-import ChooseUs from "../home/cards/chooseus/ChooseUs";
-import "./SobreNos.css";
-import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import React from "react";
+import esteira from "../imgs/esteira.jpg";
+import peso from "../imgs/peso.jpg";
+import imagem from "../imgs/sobre-nos.jpg";
+import "./SobreNos.css";
 
 
 
