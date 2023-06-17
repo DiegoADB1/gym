@@ -7,6 +7,7 @@ function UserLogin() {
     const [user, setUser] = useState({});
 
     const verifyUser = () => {
+        console.log("teste")
         if (user.username == undefined) {
             const localUser = localStorage.getItem("username")
             if (localUser == undefined) {

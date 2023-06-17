@@ -26,7 +26,6 @@ function Signup() {
     });
 
     const handleChange = (e) => {
-        console.log(formInputData)
         const newInput = (data) => ({
             ...data,
             [e.target.name]: e.target.value,
