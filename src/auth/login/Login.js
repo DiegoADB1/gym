@@ -2,23 +2,28 @@ import { useState } from "react";
 import config from "../../config.json";
 import axios from "axios";
 import jwt from 'jsonwebtoken';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Home from "../../home/Home";
 
 function Login() {
+    const navigate = useNavigate();
 
     const handleSubmit = async e => {
         e.preventDefault()
 
         const response = await axios.post(config.api.url + "/api/auth/login", formInputData)
-        if (response.status != 200) {
-            alert("Usuário ou senha incorretos")
-            return;
-        }
-
-        localStorage.setItem("Authorization", response.data)
-        let jsonDecoded = jwt.decode(response.data)
-        localStorage.setItem("username", jsonDecoded.sub)
-
+            .then(res => {
+                localStorage.setItem("Authorization", res.data)
+                let jsonDecoded = jwt.decode(res.data)
+                localStorage.setItem("username", jsonDecoded.sub)
+                navigate("/")
+            })
+            .catch(res => {
+                if (response.status != 200) {
+                    alert("Usuário ou senha incorretos")
+                    return;
+                }
+            })
     }
 
     const [formInputData, setFormInputData] = useState({

@@ -1,10 +1,11 @@
-import { useState } from "react";
-import config from "../../config.json";
 import axios from "axios";
 import jwt from 'jsonwebtoken';
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import config from "../../config.json";
 
 function Signup() {
+    const navigate = useNavigate();
 
     const handleSubmit = async e => {
         e.preventDefault()
@@ -14,6 +15,7 @@ function Signup() {
                 localStorage.setItem("Authorization", res.data)
                 let jsonDecoded = jwt.decode(res.data)
                 localStorage.setItem("username", jsonDecoded.sub)
+                navigate("/")
             })
             .catch(res => { alert("Usuário já existe") })
     }
