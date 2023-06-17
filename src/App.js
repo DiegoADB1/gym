@@ -1,14 +1,14 @@
-import Home from "./home/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./auth/login/Login";
 import Contato from "./contatos/contato.js";
-import SobreNos from "./sobre-nos/SobreNos";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./home/Home";
 import NossoTime from "./nosso-time/NossoTime";
 import Servico from "./servicos/Servico";
+import SobreNos from "./sobre-nos/SobreNos";
 import Treino from "./treino/Treino";
-import Login from "./auth/login/Login";
 
+import Signup from "./auth/register/Signup";
 import { userContext } from './context/UserContext';
-import { useState } from "react";
 
 function App() {
   const getUser = () => {
@@ -28,6 +28,7 @@ function App() {
           <Route path="/servico" element={<Servico />} />
           <Route path="/treino" element={<Treino />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </userContext.Provider>
