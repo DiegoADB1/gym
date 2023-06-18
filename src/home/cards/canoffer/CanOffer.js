@@ -33,7 +33,7 @@ function CanOffer() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 hover-container">
             <img
               className="image mx-auto d-block"
               src={AULALUTA}

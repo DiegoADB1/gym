@@ -1,9 +1,12 @@
-import { useState } from "react";
-import config from "../../config.json";
 import axios from "axios";
 import jwt from 'jsonwebtoken';
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Home from "../../home/Home";
+import config from "../../config.json";
+import "./login.css"
+import "../../footer/Footer.js"
+import "../../header/Header.js"
+import "../../header/HeaderContent.js"
 
 function Login() {
     const navigate = useNavigate();
@@ -11,7 +14,7 @@ function Login() {
     const handleSubmit = async e => {
         e.preventDefault()
 
-        const response = await axios.post(config.api.url + "/api/auth/login", formInputData)
+        await axios.post(config.api.url + "/api/auth/login", formInputData)
             .then(res => {
                 localStorage.setItem("Authorization", res.data)
                 let jsonDecoded = jwt.decode(res.data)
@@ -19,7 +22,7 @@ function Login() {
                 navigate("/")
             })
             .catch(res => {
-                if (response.status != 200) {
+                if (res.status != 200) {
                     alert("Usuário ou senha incorretos")
                     return;
                 }
@@ -41,8 +44,8 @@ function Login() {
 
 
     return (
-        <>
-            <form onSubmit={handleSubmit}>
+        <div className="geral">
+            <form className="login-form" onSubmit={handleSubmit}>
                 <label>
                     Usuário:
                     <input
@@ -65,11 +68,11 @@ function Login() {
                 <br />
                 <br />
                 <button type="submit">Enviar</button>
+                <Link className="btn btn-register" to="/signup">
+                    Registre-se
+                </Link>
             </form>
-            <Link className="btn btn-primary" to="/signup">
-                Registre-se
-            </Link>
-        </>
+        </div>
     )
 }
 
