@@ -21,13 +21,19 @@ function Login() {
                 localStorage.setItem("username", jsonDecoded.sub)
                 navigate("/")
             })
+            .then(res => refreshPage())
             .catch(res => {
                 if (res.status != 200) {
                     alert("Usuário ou senha incorretos")
                     return;
                 }
             })
+
     }
+
+    function refreshPage(){ 
+        window.location.reload(); 
+      }
 
     const [formInputData, setFormInputData] = useState({
         username: "",
