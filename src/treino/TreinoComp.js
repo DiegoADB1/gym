@@ -21,7 +21,7 @@ function TreinoComp() {
         time: ""
     });
 
-    useEffect(() => {
+    const requestData = () => {
         const localUser = localStorage.getItem("username")
         if (localUser == undefined) {
             navigate("/login")
@@ -32,7 +32,11 @@ function TreinoComp() {
             .then(res => {
                 setTableData(res.data)
             })
-    })
+    }
+
+    useEffect(() => {
+        requestData()
+    }, [])
 
     const handleChange = (evnt) => {
         const newInput = (data) => ({
@@ -70,7 +74,9 @@ function TreinoComp() {
                 </div>
             </div>
             <div className="border p-3 shadow-lg p-3 mb-5 bg-white rounded">
-                <Table tableData={tableData} />
+                <Table 
+                    tableData={tableData}
+                    requestData={requestData}/>
             </div>
         </div>
 

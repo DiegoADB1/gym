@@ -1,7 +1,7 @@
 import axios from "axios"
 import config from "../../config.json"
 
-function Table({ tableData }) {
+function Table({ tableData, requestData }) {
     const formatDate = (dateString) => {
         const options = { year: "numeric", month: "long", day: "numeric", hour: "numeric", minute: "numeric" }
         return new Date(dateString).toLocaleDateString(undefined, options)
@@ -15,6 +15,7 @@ function Table({ tableData }) {
 
     const handleDelete = async (id) => {
         await axios.delete(config.api.url + "/api/training/" + id, headerConfig)
+        requestData()
     }
 
     return (
