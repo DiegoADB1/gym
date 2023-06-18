@@ -1,6 +1,7 @@
 
 .carousel {
   position: relative;
+  background-color: rgb(12, 13, 14); 
 }
 
 .carousel-inner {
@@ -21,23 +22,18 @@
 
 .carousel-item img {
   width: 100%;
+  height: auto;
 }
 
 .carousel-item .carousel-image {
-  width: 80%; /* Defina o tamanho desejado para as imagens */
-  max-width: 500px; /* Define o tamanho máximo das imagens */
-  margin: 0px auto; /* Centraliza as imagens horizontalmente */
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
   position: relative;
-  align-items: center;
-  align-items: center;
   display: block;
   padding-top: 18px;
   padding-bottom: 18px;
-
 }
-
-  
-
 
 .carousel-indicators {
   position: absolute;
