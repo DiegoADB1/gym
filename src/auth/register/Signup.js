@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import config from "../../config.json";
+import "./register.css"
 
 function Signup() {
     const navigate = useNavigate();
@@ -17,7 +18,12 @@ function Signup() {
                 localStorage.setItem("username", jsonDecoded.sub)
                 navigate("/")
             })
-            .catch(res => { alert("Usuário já existe") })
+            .catch(res => {
+                if (res.status != 200) {
+                    alert("Usuário já existe")
+                    return
+                }
+            })
     }
 
     const [formInputData, setFormInputData] = useState({
@@ -35,6 +41,7 @@ function Signup() {
 
 
     return (
+        <div className="register_box">
         <form onSubmit={handleSubmit}>
             <label>
                 Usuário:
@@ -64,6 +71,7 @@ function Signup() {
                 </Link>
             </div>
         </form>
+        </div>
     )
 }
 

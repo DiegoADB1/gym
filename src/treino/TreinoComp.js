@@ -5,6 +5,7 @@ import TreinoPreview from "./form/TreinoPreview"
 import Table from "./form/Table"
 import axios from "axios";
 import config from "../config.json";
+import "./TreinoComp.css"
 
 function TreinoComp() {
     const navigate = useNavigate()
@@ -55,7 +56,7 @@ function TreinoComp() {
     };
 
     return (
-        <div className="container" style={{ paddingTop: "50px" }}>
+        <div className="treino" style={{ paddingTop: "50px" }}>
             <div className="row">
                 <div className="col-md-6">
                     <FormTreino
