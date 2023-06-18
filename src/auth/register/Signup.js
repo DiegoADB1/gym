@@ -18,6 +18,7 @@ function Signup() {
                 localStorage.setItem("username", jsonDecoded.sub)
                 navigate("/")
             })
+            .then(res => refreshPage())
             .catch(res => {
                 if (res.status != 200) {
                     alert("Usuário já existe")
@@ -25,6 +26,11 @@ function Signup() {
                 }
             })
     }
+
+    
+    function refreshPage(){ 
+        window.location.reload(); 
+      }
 
     const [formInputData, setFormInputData] = useState({
         username: "",
