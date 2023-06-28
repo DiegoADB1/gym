@@ -36,7 +36,7 @@ function NossoTimeComp() {
             <div class="img-container">
               <img src={T2} alt="treinador" />
             </div>
-            <h3> Gabriel Monteiro</h3>
+            <h3> Charles do Bronx </h3>
             <p>Professor de Luta </p>
             <div class="icons">
               <a href="#!">
