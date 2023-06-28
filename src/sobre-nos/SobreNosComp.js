@@ -2,11 +2,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import React from "react";
 import esteira from "../imgs/esteira.jpg";
-import peso from "../imgs/peso.jpg";
-import imagem from "../imgs/sobre-nos.jpg";
+import total from "../imgs/total.jpg"
 import "./SobreNos.css";
 import "../home/cards/chooseus/chooseus.css";
 
+import natacao from "../imgs/natacao1.jpg"
 function ChooseUs() {
   return (
     <>
@@ -97,13 +97,13 @@ function SobreNosComp() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={imagem} className="carousel-image" />
+            <img src={total} className="carousel-image" />
           </div>
           <div className="carousel-item">
             <img src={esteira} className="carousel-image" />
           </div>
           <div className="carousel-item">
-            <img src={peso} className="carousel-image" />
+            <img src={natacao} className="carousel-image" />
           </div>
         </div>
         <button
