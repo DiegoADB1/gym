@@ -19,6 +19,7 @@ function Login() {
     const navigate = useNavigate();
 
     const handleSubmit = async e => {
+        console.log("teste")
         e.preventDefault()
 
         await axios.post(config.api.url + "/api/auth/login", formInputData)
@@ -53,7 +54,6 @@ function Login() {
             [e.target.name]: e.target.value,
         });
         setFormInputData(newInput);
-        console.log(formInputData)
     };
 
 
@@ -62,26 +62,26 @@ function Login() {
             <MDBRow>
 
                 <MDBCol sm='6'>
+                    <form onSubmit={handleSubmit}>
+                        <div className='d-flex flex-row ps-5 pt-5'>
+                            <span className="h1 fw-bold mb-0"><img src={LOGO} alt="logo" /></span>
+                        </div>
 
-                    <div className='d-flex flex-row ps-5 pt-5'>
-                        <span className="h1 fw-bold mb-0"><img src={LOGO} alt="logo" /></span>
-                    </div>
+                        <div className='d-flex flex-column justify-content-center h-custom-2 w-75 pt-4' style={{ top: "50%", transform: "translateY(25%)" }}>
 
-                    <div className='d-flex flex-column justify-content-center h-custom-2 w-75 pt-4' style={{top: "50%", transform: "translateY(25%)"}}>
+                            <h3 className="fw-normal mb-3 ps-5 pb-3" style={{ letterSpacing: '1px', color: "white" }}>Log in</h3>
 
-                        <h3 className="fw-normal mb-3 ps-5 pb-3" style={{ letterSpacing: '1px', color: "white" }}>Log in</h3>
+                            <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Usuário' labelStyle={{ color: "white" }} name="username" id='formControlLg' type='text' size="lg" onChange={handleChange} required={true}/>
+                            <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Senha' labelStyle={{ color: "white" }} name="password" id='formControlLg' type='password' size="lg" onChange={handleChange} required={true}/>
 
-                        <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Usuário' labelStyle={{color: "white"}} name="username" id='formControlLg' type='email' size="lg" onChange={handleChange} />
-                        <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Senha' labelStyle={{color: "white"}} name="password" id='formControlLg' type='password' size="lg" onChange={handleChange} />
+                            <button type="submit" className="mb-4 px-5 mx-5 w-100 btn" style={{ backgroundColor: "#ff9900" }}>Login</button>
 
-                        <button type="button" className="mb-4 px-5 mx-5 w-100 btn" style={{backgroundColor: "#ff9900"}} onClick={handleSubmit}>Login</button>
+                            <p className='ms-5' style={{ color: "white" }}>Não possui uma conta?
+                                <Link style={{ marginLeft: "10px" }} to="/signup">Cadastre-se aqui</Link>
+                            </p>
 
-                        <p className='ms-5' style={{ color: "white"}}>Não possui uma conta?
-                            <Link style={{ marginLeft: "10px" }} to="/signup">Cadastre-se aqui</Link>
-                        </p>
-
-                    </div>
-
+                        </div>
+                    </form>
                 </MDBCol>
 
                 <MDBCol sm='6' className='d-none d-sm-block px-0'>

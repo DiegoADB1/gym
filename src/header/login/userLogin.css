@@ -7,3 +7,11 @@
     color: white;
     font-weight: 600;
 }
+
+.logout {
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+}
