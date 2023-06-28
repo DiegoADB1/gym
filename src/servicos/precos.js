@@ -18,7 +18,7 @@ function PricingSection() {
             <div className="ps-item">
               <h3>Básico</h3>
               <div className="pi-price">
-                <h2>R$ 39,90</h2>
+                <h2>R$ 39.00</h2>
               </div>
               <ul>
                 <li>Acesso ilimitado aos equipamentos</li>
@@ -32,7 +32,7 @@ function PricingSection() {
             <div className="ps-item">
               <h3>Plano Premium</h3>
               <div className="pi-price">
-                <h2>R$ 59,99</h2>
+                <h2>R$ 69.00</h2>
               </div>
               <ul>
                 <li>Acesso ilimitado aos equipamentos</li>
@@ -47,7 +47,7 @@ function PricingSection() {
             <div className="ps-item">
               <h3>Plano de Treinamento Especializado</h3>
               <div className="pi-price">
-                <h2>R$ 99,90</h2>
+                <h2>R$ 99.00</h2>
               </div>
               <ul>
                 <li>Acesso Ilimitado aos equipamentos</li>
