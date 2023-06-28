@@ -11,7 +11,7 @@ const ServicesSection = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-title">
-                <span className="fw-bolder" style={{color:'#f36100'}}>O que fazemos?</span>
+                <span style={{color:'#f36100'}}>O que fazemos?</span>
                 <h2 style={{color:'white'}}>ELEVAMOS SEU POTENCIAL</h2>
               </div>
             </div>
@@ -29,7 +29,6 @@ const ServicesSection = () => {
                 <br></br><br></br>
                 <br></br>
                 <br></br>
-                <a href="!#">Veja Mais</a>
               </div>
             </div>
             <div className="col-lg-3 order-lg-3 col-md-6 p-0">
@@ -42,7 +41,6 @@ const ServicesSection = () => {
                 <h4 style={{color:'white'}}>Aulas de ginástica em grupo</h4>
                 <p>Participe de aulas em grupo com outros membros da academia.</p>
                 <br></br><br></br><br></br>
-                <a href="!#">Veja Mais</a>
               </div>
             </div>
             <div className="col-lg-3 order-lg-8 col-md-6 p-0">
@@ -55,7 +53,6 @@ const ServicesSection = () => {
                 <h4 style={{color:'white'}}>Body building</h4>
                 <br></br><br></br><br></br><br></br>
                 <p>Cresça o corpo da forma que você deseja da melhor forma possível.</p>
-                <a href="!#">Veja Mais</a>
               </div>
             </div>
             <div className="col-lg-3 order-lg-6 col-md-6 p-0">
@@ -68,7 +65,6 @@ const ServicesSection = () => {
                 <h4 style={{color:'white'}}>Musculação</h4>
                 <br></br><br></br><br></br><br></br>
                 <p>Melhore sua capacidade física aumentando sua força e disposição.</p>
-                <a href="!#">Veja Mais</a>
               </div>
             </div>
           </div>

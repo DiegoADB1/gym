@@ -62,14 +62,14 @@ function TreinoComp() {
     return (
         <div className="treino" style={{ paddingTop: "50px" }}>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6" id="colunaTreino">
                     <FormTreino
                         handleChange={handleChange}
                         formInputData={formInputData}
                         handleSubmit={handleSubmit}
                     />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6" id="colunaTreino">
                     <TreinoPreview formInputData={formInputData} />
                 </div>
             </div>

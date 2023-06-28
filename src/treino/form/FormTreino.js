@@ -38,7 +38,7 @@ function FromTreino({ handleChange, formInputData, handleSubmit }) {
                 </div>
 
 
-                <button type="submit" className="btn btn-primary w-100" style={{ backgroundColor: "#ec6405" }}>Criar treino</button>
+                <button type="submit" className="btn btn-primary w-100">Criar treino</button>
             </form>
         </div>
     );
