@@ -74,7 +74,7 @@ function Signup() {
                             <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Usuário' labelStyle={{ color: "white" }} name="username" id='formControlLg' type='text' size="lg" onChange={handleChange} required={true} />
                             <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Senha' labelStyle={{ color: "white" }} name="password" id='formControlLg' type='password' size="lg" onChange={handleChange} required={true} />
 
-                            <button type="submit" className="mb-4 px-5 mx-5 w-100 btn" style={{ backgroundColor: "#ff9900" }}>Cadastrar</button>
+                            <button type="submit" className="mb-4 px-5 mx-5 w-100 btn" style={{ backgroundColor: "#ec6405" }}>Cadastrar</button>
 
                             <p className='ms-5' style={{ color: "white" }}>Já possui uma conta?
                                 <Link style={{ marginLeft: "10px" }} to="/login">Entre aqui</Link>

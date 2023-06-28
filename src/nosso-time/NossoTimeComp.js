@@ -13,8 +13,8 @@ function NossoTimeComp() {
             <div class="img-container">
               <img src={T1} alt="treinador" />
             </div>
-            <h3> Terrik Turner</h3>
-            <p>Personal Trainer</p>
+            <h3> João Gomes</h3>
+            <p>Professor de Natação</p>
             <div class="icons">
               <a href="#!">
                 <FaTwitter />
@@ -36,8 +36,8 @@ function NossoTimeComp() {
             <div class="img-container">
               <img src={T2} alt="treinador" />
             </div>
-            <h3> Bryant Hall</h3>
-            <p>Personal Trainer</p>
+            <h3> Gabriel Monteiro</h3>
+            <p>Professor de Luta </p>
             <div class="icons">
               <a href="#!">
                 <FaTwitter />
@@ -59,7 +59,7 @@ function NossoTimeComp() {
             <div class="img-container">
               <img src={T3} alt="treinador" />
             </div>
-            <h3> Dave James </h3>
+            <h3> Renato Cariani </h3>
             <p>Personal Trainer</p>
             <div class="icons">
               <a href="#!">
